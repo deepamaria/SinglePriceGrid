@@ -19,6 +19,7 @@ body{
 height: 100vh;
 width: 100vw;
 background-color: White;
+font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .mainContainer {
@@ -47,7 +48,6 @@ gap: 10px;
 }
 
 .section1 h2{
-
     font-weight: 400;
     color: var(--BrightYellow);
     line-height: 1em;
@@ -62,7 +62,7 @@ gap: 10px;
     background-color: var(--Cyan);
     color: white;
 
-    height: 30%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,7 +71,13 @@ gap: 10px;
     padding: 30px;
     gap: 20px;
 }
-
+.price {
+font-size: 40px;
+font-weight: 900;
+}
+span {
+    font-size: 20px ;
+}
 .section2 h2 {
     font-weight: 200;
 }
@@ -79,34 +85,43 @@ gap: 10px;
     font-size: 20px;
     font-weight: 200;
 }
-
 .btn {
     background-color: var(--BrightYellow);
     color: white;
     padding: 15px;
     border-radius: 10px;
     font-size: 20px;
-    box-shadow: 0 2px gray;
+    box-shadow: 0 2px var(--GrayishBlue);
     border: none;
 }
 
+.section3 {
+    background-color: rgb(66, 194, 194);
+    color: white;
 
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    text-align: left;
+    padding: 30px;
+    /* padding-top: 30px; */
+    gap: 20px;
+}
 
-/* Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
+.section3 h2 {
+    font-weight: 200;
+}
+.section3 ul {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    list-style: none;
+}
 
-### Neutral
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700 */
+    
+}
